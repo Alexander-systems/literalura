@@ -27,41 +27,4 @@ LiterAlura es una aplicación de consola y API RESTful desarrollada con Spring B
 * **Jackson:** Para mapeo de JSON a objetos Java (`jackson-databind`).
 * **API de Gutendex:** Fuente externa de datos de libros (https://gutendex.com/).
 
-## ⚙️ Configuración del Proyecto
 
-### **Requisitos Previos**
-
-* Java Development Kit (JDK) 17 o superior.
-* Maven 3.6.x o superior.
-* PostgreSQL instalado y configurado.
-
-### **Pasos para Ejecutar**
-
-1.  **Clonar el repositorio:**
-    ```bash
-    git clone <URL_DEL_REPOSITORIO>
-    cd literalura
-    ```
-
-2.  **Configurar la Base de Datos:**
-    * Crea una base de datos PostgreSQL llamada `literalura` (o el nombre que prefieras).
-    * Actualiza el archivo `src/main/resources/application.properties` con las credenciales de tu base de datos:
-
-    ```properties
-    spring.datasource.url=jdbc:postgresql://localhost:5432/literalura # Reemplaza literalura si usas otro nombre
-    spring.datasource.username=tu_usuario_postgres
-    spring.datasource.password=tu_contraseña_postgres
-    # ... otras configuraciones existentes ...
-    ```
-
-3.  **Construir el proyecto:**
-    ```bash
-    mvn clean install
-    ```
-
-4.  **Ejecutar la aplicación:**
-    ```bash
-    mvn spring-boot:run
-    ```
-
-    La aplicación se iniciará y el menú de la consola se mostrará en tu terminal.
